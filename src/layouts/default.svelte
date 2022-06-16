@@ -1,5 +1,7 @@
 <script>
+	import "../app.css";
 	import { getRoutes } from "../metadata";
+	import Navigation from "../components/navigation.svelte";
 
 	const routes = getRoutes();
 
@@ -11,6 +13,7 @@
 </svelte:head>
 
 <nav>
+	<Navigation />
 	<ul>
 		{#each routes as route}
 			<li>
