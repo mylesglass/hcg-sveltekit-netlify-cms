@@ -2,6 +2,7 @@
 	import "../app.css";
 	import { getRoutes } from "../metadata";
 	import Navigation from "../components/navigation.svelte";
+	import Footer from "../components/footer.svelte";
 
 	const routes = getRoutes();
 
@@ -24,3 +25,5 @@
 </nav>
 
 <slot />
+
+<Footer />
